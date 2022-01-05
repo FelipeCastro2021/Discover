@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+:root {
+  --dark-purple: #282544;
+  --section-purple: #352e57;
+  --purple: #b382ca;
+  --title: #fbfbf9;
+  --subtitle: #6f679a;
+  --bg-feature: #3c386a;
+  --text: #ecebfb;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--dark-purple);
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 5px 1rem;
+
+  width: 100%;
+  height: 65px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h1 {
+  color: #6f679a;
+  text-transform: uppercase;
+}
+
+.header-items {
+  display: flex;
+
+  list-style: none;
+}
+
+.header-item a {
+  color: var(--purple);
+
+  padding: 0.5rem;
+
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ! DISCOVER */
+#discover {
+  background: purple
+    url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2Fstars-night-purple-background-1609485.jpg&f=1&nofb=1')
+    no-repeat center center/cover;
+
+  padding: 65px;
+
+  height: calc(100% - 65px);
+}
+
+#gallery {
+  background-color: var(--section-purple);
+  height: 100vh;
+}
+
+#about {
+  background: purple
+    url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fst.gde-fon.com%2Fwallpapers_original%2F571003_tekstura_fioletovyiy_2308x1298_www.Gde-Fon.com.jpg&f=1&nofb=1')
+    no-repeat center center/cover;
+}
+
+#informations-divider {
+  background-color: var(--section-purple);
+  height: 20vh;
+}
+
+#contact {
+  background: purple
+    url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak.picdn.net%2Fshutterstock%2Fvideos%2F1019429191%2Fthumb%2F1.jpg&f=1&nofb=1')
+    no-repeat center bottom/cover;
+  height: 100vh;
+}
